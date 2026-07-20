@@ -1,0 +1,61 @@
+schema_version: 1
+
+project:
+  name: "Example Podcast"
+  language: "en"
+  timezone: "Etc/UTC"
+  source_dir: "./sources"
+  work_dir: "./work"
+  output_dir: "./outputs"
+
+assets:
+  script: ""
+  cover_art: ""
+  logo: ""
+  fonts: []
+  intro_music: ""
+  outro_music: ""
+  license_records: []
+
+audio:
+  master_format: "wav"
+  sample_rate_hz: 48000
+  channels: 2
+  integrated_loudness_lufs: -16
+  true_peak_dbtp: -1.0
+  edit_notes: ""
+  metadata: {}
+
+long_video:
+  enabled: true
+  resolution: "1920x1080"
+  aspect_ratio: "16:9"
+  frame_rate: 30
+  captions: true
+  chapters: true
+  visual_notes: ""
+
+short_video:
+  enabled: true
+  clip_count: 3
+  duration_seconds:
+    min: 15
+    max: 60
+  resolution: "1080x1920"
+  aspect_ratio: "9:16"
+  frame_rate: 30
+  burned_in_captions: true
+  safe_area_notes: "Keep text clear of platform controls."
+
+publishing:
+  platforms: []
+  default_visibility: "draft"
+  release_date: ""
+  release_time: ""
+  timezone: "Etc/UTC"
+  metadata_notes: ""
+
+approvals:
+  require_full_audio_listen: true
+  require_video_review: true
+  require_exact_release_manifest: true

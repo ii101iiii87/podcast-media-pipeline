@@ -1,0 +1,20 @@
+{
+  "name": "podcast-media-tools",
+  "interface": {
+    "displayName": "Podcast Media Tools"
+  },
+  "plugins": [
+    {
+      "name": "podcast-media-pipeline",
+      "source": {
+        "source": "local",
+        "path": "./plugins/podcast-media-pipeline"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

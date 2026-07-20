@@ -1,0 +1,7 @@
+interface:
+  display_name: "Produce and Publish Podcast Media"
+  short_description: "Podcast QA, video production, and publishing gates"
+  default_prompt: "Use $produce-and-publish to prepare my podcast, wait for my listening approval, create long and short videos, and preview the release schedule."
+
+policy:
+  allow_implicit_invocation: true
