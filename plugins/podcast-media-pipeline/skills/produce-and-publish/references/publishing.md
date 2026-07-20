@@ -7,7 +7,7 @@ Uploading, scheduling, or publishing changes external state. Preview first, exec
 For every platform, show:
 
 - account, channel, show, or workspace
-- media file and thumbnail path
+- media file, approved episode-cover path, and video-thumbnail path
 - title and description
 - tags, hashtags, category, playlist, season, and episode number when applicable
 - captions, chapters, transcript, links, and attribution
@@ -20,11 +20,12 @@ Do not hide platform-specific differences behind one summary. The user must be a
 
 ## Approval boundary
 
-Approval applies only to the displayed manifest and matching file identities. Re-preview when a media file, thumbnail, platform, account, title, description, visibility, date, time, time zone, or declaration changes.
+Approval applies only to the displayed manifest and matching file identities. Re-preview when a media file, episode cover, thumbnail, platform, account, title, description, visibility, date, time, time zone, or declaration changes.
 
 Never treat these as release approval:
 
 - approval of the podcast audio alone
+- approval of episode cover art alone
 - approval of a prior episode
 - a general statement such as "publish these sometime"
 - a file already present in an upload folder
@@ -42,7 +43,7 @@ Never treat these as release approval:
 
 After scheduling or publishing, re-open the item and verify:
 
-- correct media and thumbnail
+- correct media, episode cover, and thumbnail
 - correct account and visibility
 - successful processing with no platform error
 - displayed date, time, and time zone

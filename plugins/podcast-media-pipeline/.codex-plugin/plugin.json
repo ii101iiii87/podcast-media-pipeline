@@ -1,7 +1,7 @@
 {
   "name": "podcast-media-pipeline",
   "version": "0.1.0",
-  "description": "A gated Codex workflow for producing a podcast, long-form video, short clips, and a scheduled release.",
+  "description": "A gated Codex workflow for producing podcast audio, episode cover art, videos, clips, and a scheduled release.",
   "author": {
     "name": "JOKER",
     "url": "https://github.com/ii101iiii87"
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "Podcast Media Pipeline",
     "shortDescription": "Produce podcasts and videos with approval gates.",
-    "longDescription": "Guide a podcast episode from source review through audio production, mandatory listening approval, long-form and short-form video creation, media QA, upload preview, and scheduled publishing.",
+    "longDescription": "Guide a podcast episode from source review through audio and episode-cover production, mandatory listening and visual approval, long-form and short-form video creation, media QA, upload preview, and scheduled publishing.",
     "developerName": "JOKER",
     "category": "Productivity",
     "websiteURL": "https://github.com/ii101iiii87/podcast-media-pipeline",
@@ -28,7 +28,7 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Prepare my podcast and stop after audio QA for listening approval.",
+      "Prepare my podcast audio and episode cover, then stop for both approvals.",
       "Turn my approved podcast into a long video and short clips.",
       "Preview upload metadata and schedule before publishing anything."
     ]

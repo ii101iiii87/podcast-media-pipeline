@@ -16,8 +16,9 @@ Call out conflicts between these sources. Ask before changing an established bra
 ## Required configuration areas
 
 - Project identity: name, language, time zone, and paths.
-- Source discovery: recordings, script, cover art, brand assets, fonts, licensed music, and prior examples.
+- Source discovery: recordings, script, episode-specific hero art, show art, brand assets, fonts, licensed music, and prior examples.
 - Audio: edit rules, intro/outro, loudness target, channel layout, sample rate, master format, metadata, and silence policy.
+- Episode cover: required status, platform outputs, canvas sizes, safe areas, brand template, text hierarchy, source-art rules, small-preview check, output format, and approval evidence.
 - Long-form video: aspect ratio, resolution, frame rate, visual layout, captions, chapters, thumbnail, and output format.
 - Short-form video: clip count, duration range, aspect ratio, caption style, safe areas, branding, and platform variants.
 - Publishing: platforms, channel or show identity, visibility, schedule, metadata templates, playlist or category, and disclosure requirements.
@@ -30,3 +31,4 @@ Call out conflicts between these sources. Ask before changing an established bra
 - Record music and stock-asset license evidence, including where the source file came from.
 - Treat schedule times as local to the configured IANA time zone unless a platform explicitly shows another zone.
 - Leave unknown settings empty and surface them before production; do not invent channel identity or legal declarations.
+- Distinguish generic show art from episode-specific cover art. Reuse show art only when the configuration explicitly allows it.

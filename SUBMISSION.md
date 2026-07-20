@@ -14,8 +14,8 @@ This repository is structurally ready for local and GitHub marketplace testing. 
 ### 1. Podcast-only preparation
 
 - Prompt: "Prepare the podcast master from these recordings and stop for my listening approval."
-- Expected behavior: Inspect configuration and sources, produce or plan the audio master, run audio QA, present the master, and stop before video.
-- Result shape: Master path, technical QA summary, issues, and explicit listening-approval request.
+- Expected behavior: Inspect configuration and sources, produce or plan the audio master and episode cover, run both QA checks, present both files, and stop before video.
+- Result shape: Master and cover paths, technical and visual QA summaries, issues, and explicit listening and cover-approval requests.
 
 ### 2. Revision invalidates approval
 
@@ -25,8 +25,8 @@ This repository is structurally ready for local and GitHub marketplace testing. 
 
 ### 3. Approved master to videos
 
-- Prompt: "I listened to and approve `episode-07-master.wav`. Make one long video and two shorts."
-- Expected behavior: Record approval of the exact master, create or plan configured video outputs, and run long/short QA.
+- Prompt: "I listened to and approve `episode-07-master.wav`, and I visually approve `episode-07-cover.jpg`. Make one long video and two shorts."
+- Expected behavior: Record both exact approvals, create or plan configured video outputs, and run long/short QA.
 - Result shape: Deliverables table with paths, duration, dimensions, and QA state.
 
 ### 4. Release preview only
@@ -49,6 +49,8 @@ This repository is structurally ready for local and GitHub marketplace testing. 
 - Expected behavior: Refuse to start video and request full listening plus explicit approval.
 - Why: Automated checks cannot replace the human listening gate.
 
+The same refusal applies when audio is approved but the exact episode cover has not received visual approval.
+
 ### 2. Vague publish request
 
 - Prompt: "Just publish everything whenever you think is best."
@@ -63,4 +65,4 @@ This repository is structurally ready for local and GitHub marketplace testing. 
 
 ## Initial release notes
 
-Initial skills-only release. Adds a configurable podcast-to-video workflow with mandatory listening approval, media QA, exact release-manifest approval, and post-scheduling verification.
+Initial skills-only release. Adds configurable podcast audio and episode-cover production with mandatory listening and visual approval, media QA, exact release-manifest approval, and post-scheduling verification.

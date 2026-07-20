@@ -26,6 +26,27 @@ audio:
   edit_notes: ""
   metadata: {}
 
+episode_cover:
+  enabled: true
+  required_for_video_gate: true
+  allow_generic_show_art: false
+  master_canvas: "3000x3000"
+  aspect_ratio: "1:1"
+  safe_margin_percent: 6
+  small_preview_px: 320
+  output_format: "jpg"
+  output_quality: 95
+  brand_template: ""
+  required_text:
+    - "episode_title"
+    - "show_or_series_name"
+    - "creator_or_brand"
+  optional_text:
+    - "episode_number"
+    - "content_label"
+  visual_formula_notes: "Brand template + episode-specific hero art + identity labels + title hierarchy + contrast layer."
+  platform_variants: []
+
 long_video:
   enabled: true
   resolution: "1920x1080"
@@ -57,5 +78,6 @@ publishing:
 
 approvals:
   require_full_audio_listen: true
+  require_episode_cover_review: true
   require_video_review: true
   require_exact_release_manifest: true

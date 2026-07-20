@@ -1,14 +1,15 @@
 # Podcast Media Pipeline
 
-Podcast Media Pipeline is a skills-only Codex plugin for moving one podcast episode through audio production, mandatory listening approval, long-form video, short-form clips, media QA, upload preview, and scheduled publishing.
+Podcast Media Pipeline is a skills-only Codex plugin for moving one podcast episode through audio and episode-cover production, mandatory listening and visual approval, long-form video, short-form clips, media QA, upload preview, and scheduled publishing.
 
-The central rule is deliberate: **Codex must not start video production until the creator confirms they listened to and approved the exported podcast master.** Uploading and scheduling require a second exact approval of the release manifest.
+The central rule is deliberate: **Codex must not start video production until the creator confirms they listened to and approved the exported podcast master and visually approved the exact episode cover.** Uploading and scheduling require another exact approval of the release manifest.
 
 ## What is included
 
 - A reusable `produce-and-publish` skill.
 - Project-level configuration for brand, media, and schedule standards.
 - Audio, long-video, and short-video QA checklists.
+- A configurable episode-cover formula, visual QA checklist, and approval record.
 - Safe upload and scheduling instructions.
 - An episode record template for approvals and verification.
 - A repository marketplace file for Codex installation.
@@ -54,8 +55,8 @@ Rename it to `podcast-pipeline.yaml`, then customize paths, brand rules, media t
 
 Example requests:
 
-- "Prepare the podcast master for episode 12 and stop for my listening approval."
-- "I listened to the exported master and approve it. Create one long video and three shorts."
+- "Prepare the podcast master and episode cover for episode 12, then stop for both approvals."
+- "I listened to the exported master and visually approve the displayed episode cover. Create one long video and three shorts."
 - "Preview the YouTube and podcast-host release manifest for next Friday; do not upload yet."
 - "Upload and schedule the exact release manifest I just approved, then verify it."
 

@@ -12,11 +12,20 @@
 |---|---|---|---|
 | Source |  |  |  |
 | Listening master |  |  |  |
+| Episode cover master |  |  |  |
 
 ## Audio approval
 
 - Master presented:
 - User confirmed full listen:
+- Approval statement:
+- Approval time and time zone:
+
+## Episode cover approval
+
+- Formula or template version:
+- Cover presented:
+- User confirmed visual review:
 - Approval statement:
 - Approval time and time zone:
 
